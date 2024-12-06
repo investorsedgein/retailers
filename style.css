@@ -30,6 +30,7 @@
         }
         
         .title-container {
+            background: #004080;                
             flex: 2;
             text-align: center;
         }
