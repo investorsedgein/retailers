@@ -16,9 +16,11 @@
         }
 
         header .logo {
-            max-width: 150px;
-            margin-bottom: 10px;
-        }
+    max-width: 150px; /* Adjust based on your layout */
+    height: auto;
+    margin: 0 auto; /* Centers the image horizontally */
+    display: block; /* Ensures the image is displayed as a block element */
+}
 
         nav {
             display: flex;
