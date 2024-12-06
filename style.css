@@ -63,12 +63,11 @@
         nav {
             display: flex;
             justify-content: center;
-            background: #003366;
             padding: 0.5rem 0;
         }
         
         nav a {
-            color: #fff;
+            color: #003366;
             text-decoration: none;
             padding: 0.5rem 1rem;
             transition: background 0.3s;
