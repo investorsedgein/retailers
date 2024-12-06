@@ -45,7 +45,7 @@
         }
        
         .title-container {       
-            background: #fff;           
+            background: #f9f9f9;           
             flex: 2;
             text-align: center;
         }
@@ -68,7 +68,7 @@
         }
         
         nav a {
-            color: #003366;
+            color: #fff;
             text-decoration: none;
             padding: 0.5rem 1rem;
             transition: background 0.3s;
