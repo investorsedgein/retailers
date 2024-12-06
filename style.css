@@ -44,7 +44,8 @@
             transform: scale(1.2);
         }
        
-        .title-container {                
+        .title-container {       
+            background: #003366;                
             flex: 2;
             text-align: center;
         }
