@@ -39,24 +39,37 @@
             border-radius: 5px;
         }
 
-        .hero {
-            text-align: center;
-            padding: 2rem;
-            background: url('assets/hero-background.jpg') no-repeat center center/cover;
-            color: #fff;
-        }
+.hero {
+    text-align: center;
+    padding: 2rem;
+    background: url('assets/hero-background.jpg') no-repeat center center/cover;
+    color: #fff; /* Retain white text */
+    position: relative; /* Add positioning to manage text better */
+}
 
-        .hero h2 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-        }
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for better contrast */
+    z-index: 1;
+}
 
-        .hero p {
-            max-width: 700px;
-            margin: 0 auto;
-            font-size: 1.2rem;
-            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
-        }
+.hero h2, .hero p {
+    position: relative;
+    z-index: 2; /* Ensures text is above the overlay */
+}
+
+.hero p {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Optional enhancement */
+    line-height: 1.8; /* Improves readability */
+}
 
         .services, .about, .testimonials, .contact {
             padding: 2rem;
