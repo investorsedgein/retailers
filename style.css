@@ -16,7 +16,7 @@
         }
 
         header .logo {
-    max-width: 150px; /* Adjust based on your layout */
+    max-width: 300px; /* Adjust based on your layout */
     height: auto;
     margin: 0 auto; /* Centers the image horizontally */
     display: block; /* Ensures the image is displayed as a block element */
