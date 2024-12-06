@@ -1,120 +1,146 @@
- /* Global Styles */
-      {
+/* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
+            background: #f9f9f9;
             color: #333;
-            background-color: #f8f9fa;
         }
+
         header {
-            background: linear-gradient(90deg, #4CAF50, #43A047);
+            background: #004080;
             color: #fff;
-            padding: 1.5rem 0;
-            text-align: center;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        header h1 {
-            font-size: 2.5rem;
-        }
-        header p {
-            margin-top: 0.5rem;
-            font-size: 1.1rem;
-        }
-        nav {
-            background: #fff;
             padding: 1rem 0;
             text-align: center;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
         }
+
+        header .logo {
+            max-width: 150px;
+            margin-bottom: 10px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #003366;
+            padding: 0.5rem 0;
+        }
+
         nav a {
-            color: #4CAF50;
-            text-decoration: none;
-            margin: 0 1.5rem;
-            font-size: 1rem;
-            font-weight: bold;
-        }
-        nav a:hover {
-            text-decoration: underline;
-            color: #388E3C;
-        }
-        .hero {
-            background: url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
             color: #fff;
-            text-align: center;
-            padding: 3rem 1rem;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            transition: background 0.3s;
         }
+
+        nav a:hover {
+            background: #0055aa;
+            border-radius: 5px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 2rem;
+            background: url('assets/hero-background.jpg') no-repeat center center/cover;
+            color: #fff;
+        }
+
         .hero h2 {
             font-size: 2.5rem;
             margin-bottom: 1rem;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
-        .hero p {
-            max-width: 700px;
-            margin: 0 auto;
-            font-size: 1.2rem;
-            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
-        }
-        section {
-            padding: 2.5rem 1rem;
-            max-width: 1200px;
-            margin: auto;
-        }
-        h2 {
-            color: #333;
-            text-align: center;
-            margin-bottom: 1.5rem;
-            font-size: 2rem;
-        }
+
         .services, .about, .testimonials, .contact {
-            margin-bottom: 2.5rem;
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
         }
-        .services .service-item {
+
+        h2 {
+            color: #004080;
+            margin-bottom: 1rem;
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        .service-item {
+            background: #fff;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .service-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .about ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .about ul li {
+            background: url('assets/check-icon.png') no-repeat left center;
+            padding-left: 30px;
+            margin-bottom: 10px;
+        }
+
+        .testimonial {
             background: #fff;
             padding: 1.5rem;
             margin: 1rem 0;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-left: 5px solid #004080;
+            transition: box-shadow 0.3s;
         }
-        .services .service-item:hover {
-            transform: scale(1.02);
-            transition: 0.3s;
+
+        .testimonial:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
-        .service-item h3 {
-            color: #4CAF50;
-            margin-bottom: 0.5rem;
-        }
-        .testimonial {
-            background: #e8f5e9;
-            padding: 1.5rem;
-            margin: 1rem 0;
-            border-left: 5px solid #43A047;
-            border-radius: 8px;
-        }
-        footer {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1.5rem 0;
-        }
+
         .cta {
             text-align: center;
-            margin: 2rem 0;
+            background: #004080;
+            padding: 2rem;
         }
+
         .cta a {
+            background: #fff;
+            color: #004080;
             text-decoration: none;
-            color: #fff;
-            background: #4CAF50;
-            padding: 0.75rem 2rem;
+            padding: 0.5rem 1rem;
             border-radius: 5px;
-            font-weight: bold;
+            font-size: 1.2rem;
+            transition: background 0.3s;
         }
+
         .cta a:hover {
-            background: #388E3C;
+            background: #003366;
+            color: #fff;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #003366;
+            color: #fff;
+        }
+
+        @media (max-width: 768px) {
+            .hero h2 {
+                font-size: 2rem;
+            }
+
+            nav {
+                flex-direction: column;
+            }
+
+            nav a {
+                padding: 0.5rem;
+            }
         }
