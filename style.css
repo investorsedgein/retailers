@@ -27,23 +27,6 @@
             max-width: 150px;
             height: auto;
         }
-        
-        .title-container {
-            background: #004080;                
-            flex: 2;
-            text-align: center;
-        }
-        
-        .title-container h1 {
-            margin: 0;
-            font-size: 1.8rem;
-        }
-        
-        .title-container p {
-            margin: 0;
-            font-size: 1rem;
-        }
-        
         .social-media-container {
             flex: 1;
             display: flex;
@@ -60,37 +43,23 @@
         .social-icon:hover {
             transform: scale(1.2);
         }
-        
-/*
-        header {
-            background: #D3D3D3;
-            color: #fff;
-            padding: 1rem 0;
+       
+        .title-container {
+            background: #004080;                
+            flex: 2;
             text-align: center;
         }
         
-        h1 {
-            color: #004080;
-            margin-bottom: 1rem;
-            font-size: 2rem;
-            text-align: center;
+        .title-container h1 {
+            margin: 0;
+            font-size: 1.8rem;
         }
         
-        header p {
-            max-width: 700px;
-            margin: 0 auto;
-            font-size: 1.2rem;
-            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Optional enhancement */
-            line-height: 1.8; /* Improves readability */
+        .title-container p {
+            margin: 0;
+            font-size: 1rem;
         }
-        
-        header .logo {
-            max-width: 300px; /* Adjust based on your layout */
-            height: auto;
-            margin: 0 auto; /* Centers the image horizontally */
-            display: block; /* Ensures the image is displayed as a block element */
-        }
-  */      
+ 
         nav {
             display: flex;
             justify-content: center;
