@@ -7,7 +7,61 @@
             background: #f9f9f9;
             color: #333;
         }
+/* Header Styles */
+        header {
+            background: #004080;
+            padding: 1rem 2rem;
+            color: #fff;
+        }
+
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
         
+        .logo-container {
+            flex: 1;
+        }
+        
+        .logo {
+            max-width: 150px;
+            height: auto;
+        }
+        
+        .title-container {
+            flex: 2;
+            text-align: center;
+        }
+        
+        .title-container h1 {
+            margin: 0;
+            font-size: 1.8rem;
+        }
+        
+        .title-container p {
+            margin: 0;
+            font-size: 1rem;
+        }
+        
+        .social-media-container {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+        }
+        
+        .social-icon {
+            width: 30px;
+            height: 30px;
+            transition: transform 0.3s;
+        }
+        
+        .social-icon:hover {
+            transform: scale(1.2);
+        }
+        
+/*
         header {
             background: #D3D3D3;
             color: #fff;
@@ -36,7 +90,7 @@
             margin: 0 auto; /* Centers the image horizontally */
             display: block; /* Ensures the image is displayed as a block element */
         }
-        
+  */      
         nav {
             display: flex;
             justify-content: center;
